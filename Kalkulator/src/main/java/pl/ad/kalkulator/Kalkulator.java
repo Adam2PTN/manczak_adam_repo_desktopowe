@@ -43,6 +43,8 @@ public class Kalkulator extends javax.swing.JFrame {
         am_jMenu_plik = new javax.swing.JMenu();
         am_jCheckBoxMenuItem_historia = new javax.swing.JCheckBoxMenuItem();
         am_jMenuItem_close = new javax.swing.JMenuItem();
+        am_jMenu_tool = new javax.swing.JMenu();
+        am_jMenuItem_iledni = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -184,6 +186,13 @@ public class Kalkulator extends javax.swing.JFrame {
 
         am_jMenuBar.add(am_jMenu_plik);
 
+        am_jMenu_tool.setText("Tools");
+
+        am_jMenuItem_iledni.setText("Ile dni pomiędzy datami");
+        am_jMenu_tool.add(am_jMenuItem_iledni);
+
+        am_jMenuBar.add(am_jMenu_tool);
+
         setJMenuBar(am_jMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -277,7 +286,9 @@ public class Kalkulator extends javax.swing.JFrame {
     private javax.swing.JLabel am_jLabel_wynik;
     private javax.swing.JMenuBar am_jMenuBar;
     private javax.swing.JMenuItem am_jMenuItem_close;
+    private javax.swing.JMenuItem am_jMenuItem_iledni;
     private javax.swing.JMenu am_jMenu_plik;
+    private javax.swing.JMenu am_jMenu_tool;
     private javax.swing.JPanel am_jPanel;
     private javax.swing.JTextField am_jTextField_l1;
     private javax.swing.JTextField am_jTextField_l2;
