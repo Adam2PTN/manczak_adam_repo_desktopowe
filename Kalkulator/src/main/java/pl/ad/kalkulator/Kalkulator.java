@@ -5,6 +5,9 @@
  */
 package pl.ad.kalkulator;
 
+import java.time.format.DateTimeFormatter;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author HP
@@ -189,6 +192,11 @@ public class Kalkulator extends javax.swing.JFrame {
         am_jMenu_tool.setText("Tools");
 
         am_jMenuItem_iledni.setText("Ile dni pomiędzy datami");
+        am_jMenuItem_iledni.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                am_jMenuItem_iledniActionPerformed(evt);
+            }
+        });
         am_jMenu_tool.add(am_jMenuItem_iledni);
 
         am_jMenuBar.add(am_jMenu_tool);
@@ -240,6 +248,11 @@ public class Kalkulator extends javax.swing.JFrame {
     private void am_jMenuItem_closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jMenuItem_closeActionPerformed
         System.exit(0);
     }//GEN-LAST:event_am_jMenuItem_closeActionPerformed
+
+    private void am_jMenuItem_iledniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jMenuItem_iledniActionPerformed
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM yyyy");
+        JOptionPane.showInputDialog("Wprowadź datę w formacie dd mm yyyy np. 01 02 2021");
+    }//GEN-LAST:event_am_jMenuItem_iledniActionPerformed
 
     /**
      * @param args the command line arguments
