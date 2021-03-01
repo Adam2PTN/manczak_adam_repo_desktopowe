@@ -7,6 +7,7 @@ package pl.ad.kalkulator;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import javax.swing.JOptionPane;
 
 /**
@@ -256,7 +257,9 @@ public class Kalkulator extends javax.swing.JFrame {
         System.out.println(data);
         LocalDate ldnow = LocalDate.now();
         LocalDate ldinput = LocalDate.parse(data, formatter);
-        System.out.println(ldnow+" "+ldinput);
+        //System.out.println(ldnow+" "+ldinput);
+        long days = ChronoUnit.DAYS.between(ldinput,ldnow);
+        System.out.println("Ilość dni między datami:"+days);
     }//GEN-LAST:event_am_jMenuItem_iledniActionPerformed
 
     /**
