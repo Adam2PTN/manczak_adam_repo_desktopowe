@@ -7,6 +7,7 @@ package pl.ad.kalkulator;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
 import javax.swing.JOptionPane;
 
@@ -253,15 +254,25 @@ public class Kalkulator extends javax.swing.JFrame {
 
     private void am_jMenuItem_iledniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jMenuItem_iledniActionPerformed
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM yyyy");
-        String data = JOptionPane.showInputDialog("Wprowadź datę w formacie dd mm yyyy np. 01 02 2021");
+        String info ="";
+        while(!info.equals("ok")){
+        String data = JOptionPane.showInputDialog("Wprowadź datę w formacie dd mm yyyy np. 01 02 2021"+""+info);
         System.out.println(data);
-        if(data != null && data.length()>0){
-        LocalDate ldnow = LocalDate.now();
-        LocalDate ldinput = LocalDate.parse(data, formatter);
-        //System.out.println(ldnow+" "+ldinput);
-        long days = ChronoUnit.DAYS.between(ldinput,ldnow);
-        JOptionPane.showMessageDialog(rootPane, ""+days,"Ilosc dni", HEIGHT);
-       }
+        if(data != null && data.length()==10){
+         LocalDate ldnow = LocalDate.now();
+         try{
+             LocalDate ldinput = LocalDate.parse(data, formatter);
+                //System.out.println(ldnow+" "+ldinput);
+                long days = ChronoUnit.DAYS.between(ldinput,ldnow);
+                JOptionPane.showMessageDialog(rootPane, ""+days,"Ilosc dni", HEIGHT);
+                  info = "ok";
+            } catch(DateTimeParseException ex){
+            info = "Wprowadzono zły format daty.";
+            }
+      } else {
+            info = "ok";
+        }
+      }
     }//GEN-LAST:event_am_jMenuItem_iledniActionPerformed
 
     /**
