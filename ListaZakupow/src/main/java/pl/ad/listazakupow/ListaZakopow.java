@@ -5,6 +5,9 @@
  */
 package pl.ad.listazakupow;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 /**
  *
  * @author HP
@@ -210,6 +213,53 @@ public class ListaZakopow extends javax.swing.JFrame {
                 new ListaZakopow().setVisible(true);
             }
         });
+    }
+    
+    private void addKeyToam_jTextField1(){
+        am_jTextField1.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                
+                if(e.getKeyChar() == KeyEvent.VK_ENTER){
+                System.out.println("Znak"+e.getKeyChar());
+                am_jTextArea1.setText(am_jTextField1.getText());
+            }
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                //System.out.println("2 keyPressed"+e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                //System.out.println("3 keyReleased"+e.getKeyChar());
+            }
+        });
+        
+    }
+    
+    private void addKeyListenerToam_jTextField2(){
+        am_jTextField2.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                char ch =e.getKeyChar();
+                if(ch == '0' || ch == '1' || ch == '2' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9'){
+                    System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
+                }
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+               
+            }
+        });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
