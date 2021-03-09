@@ -75,8 +75,11 @@
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="am_jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="am_jTextField1" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                                      <Component id="am_jTextField1" min="-2" pref="172" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                          <Component id="am_jLabel1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
@@ -93,13 +96,6 @@
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="am_jTextField3" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="am_jTextField4" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
@@ -116,6 +112,11 @@
                                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                              </Group>
+                              <Component id="am_jTextField3" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="am_jTextField4" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
