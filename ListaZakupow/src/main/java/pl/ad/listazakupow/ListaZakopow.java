@@ -245,8 +245,37 @@ public class ListaZakopow extends javax.swing.JFrame {
             @Override
             public void keyTyped(KeyEvent e) {
                 char ch =e.getKeyChar();
-                if(ch == '0' || ch == '1' || ch == '2' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9'){
-                    System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
+                if(ch >= '0' && ch <= '9' ||ch == KeyEvent.VK_BACK_SPACE){
+                    am_jTextField2.setEditable(true);
+                    //System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
+                } else {
+                    am_jTextField2.setEditable(false);
+                }
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+               
+            }
+        });
+        
+    }
+    
+    private void addKeyListenerToam_jTextField3(){
+        am_jTextField3.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                char ch =e.getKeyChar();
+                if(ch >= '0' && ch <= '9' ||ch == KeyEvent.VK_BACK_SPACE){
+                    am_jTextField3.setEditable(true);
+                    //System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
+                } else {
+                    am_jTextField3.setEditable(false);
                 }
             }
 
