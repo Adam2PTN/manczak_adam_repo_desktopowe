@@ -19,6 +19,7 @@ public class ListaZakopow extends javax.swing.JFrame {
      */
     public ListaZakopow() {
         initComponents();
+        addKeyListenerToam_jTextField_data();
     }
 
     /**
@@ -46,6 +47,7 @@ public class ListaZakopow extends javax.swing.JFrame {
         am_jLabel7 = new javax.swing.JLabel();
         am_jTextField3 = new javax.swing.JTextField();
         am_jTextField4 = new javax.swing.JTextField();
+        am_jTextField_data = new javax.swing.JTextField();
         am_jMenuBar = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -63,6 +65,11 @@ public class ListaZakopow extends javax.swing.JFrame {
         am_jLabel4.setText("Data zakupu");
 
         am_jButton1.setText("Zapisz");
+        am_jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                am_jButton1ActionPerformed(evt);
+            }
+        });
 
         am_jTextArea1.setColumns(20);
         am_jTextArea1.setRows(5);
@@ -73,6 +80,12 @@ public class ListaZakopow extends javax.swing.JFrame {
         am_jLabel6.setText("Wydatki z dzisiaj:");
 
         am_jLabel7.setText("Wydatki z tygodnia:");
+
+        am_jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                am_jTextField3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout am_jPanellLayout = new javax.swing.GroupLayout(am_jPanell);
         am_jPanell.setLayout(am_jPanellLayout);
@@ -92,7 +105,7 @@ public class ListaZakopow extends javax.swing.JFrame {
                                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(am_jLabel6)
                                     .addComponent(am_jLabel7))
-                                .addGap(0, 1, Short.MAX_VALUE))
+                                .addGap(0, 5, Short.MAX_VALUE))
                             .addGroup(am_jPanellLayout.createSequentialGroup()
                                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(am_jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -112,20 +125,24 @@ public class ListaZakopow extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, am_jPanellLayout.createSequentialGroup()
                                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(am_jPanellLayout.createSequentialGroup()
-                                        .addGap(0, 2, Short.MAX_VALUE)
+                                        .addGap(0, 6, Short.MAX_VALUE)
                                         .addComponent(am_jLabel3))
                                     .addComponent(am_jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
                                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(am_jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, am_jPanellLayout.createSequentialGroup()
-                                        .addComponent(am_jLabel4)
-                                        .addGap(13, 13, 13))))
+                                    .addGroup(am_jPanellLayout.createSequentialGroup()
+                                        .addGap(29, 29, 29)
+                                        .addComponent(am_jLabel4))
+                                    .addGroup(am_jPanellLayout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(am_jTextField_data, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(am_jTextField3)
                             .addGroup(am_jPanellLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
-                                .addComponent(am_jTextField4)))
-                        .addGap(20, 20, 20))))
+                                .addComponent(am_jTextField4))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, am_jPanellLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(am_jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(20, 20, 20))
         );
         am_jPanellLayout.setVerticalGroup(
             am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,14 +153,16 @@ public class ListaZakopow extends javax.swing.JFrame {
                     .addComponent(am_jLabel2)
                     .addComponent(am_jLabel3)
                     .addComponent(am_jLabel4))
-                .addGap(8, 8, 8)
+                .addGap(9, 9, 9)
                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(am_jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(am_jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(am_jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(am_jTextField_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
+                .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(am_jLabel5)
                     .addComponent(am_jButton1))
-                .addGap(16, 16, 16)
-                .addComponent(am_jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(am_jPanellLayout.createSequentialGroup()
@@ -180,6 +199,14 @@ public class ListaZakopow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void am_jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_am_jTextField3ActionPerformed
+
+    private void am_jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_am_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,16 +267,23 @@ public class ListaZakopow extends javax.swing.JFrame {
         
     }
     
-    private void addKeyListenerToam_jTextField2(){
-        am_jTextField2.addKeyListener(new KeyListener() {
+    
+        private void addKeyListenerToam_jTextField_data(){
+        am_jTextField_data.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
-                char ch =e.getKeyChar();
-                if(ch >= '0' && ch <= '9' ||ch == KeyEvent.VK_BACK_SPACE){
-                    am_jTextField2.setEditable(true);
-                    //System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
+                String temp = am_jTextField_data.getText();
+                char ch = e.getKeyChar();
+                if((ch >= '0' && ch <= '9' || ch == '-' || ch == KeyEvent.VK_BACK_SPACE)&&
+                    (temp.length()< 10 || ch == KeyEvent.VK_BACK_SPACE)
+                        ){
+                    am_jTextField_data.setEditable(true);
+                    //Jeśli długość znaków jest równa 4 lub 7 i znak różny od backspace dodaj -
+                if(temp.length() == 4 || temp.length() == 7 && ch != KeyEvent.VK_BACK_SPACE){
+                    am_jTextField_data.setText(temp+'-');
+                }
                 } else {
-                    am_jTextField2.setEditable(false);
+                    am_jTextField_data.setEditable(false);
                 }
             }
 
@@ -266,16 +300,16 @@ public class ListaZakopow extends javax.swing.JFrame {
         
     }
     
-    private void addKeyListenerToam_jTextField3(){
-        am_jTextField3.addKeyListener(new KeyListener() {
+    private void addKeyListenerToam_jTextField1(){
+        am_jTextField1.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
                 char ch =e.getKeyChar();
                 if(ch >= '0' && ch <= '9' ||ch == KeyEvent.VK_BACK_SPACE){
-                    am_jTextField3.setEditable(true);
+                    am_jTextField1.setEditable(true);
                     //System.out.println("NACIŚNIĘTO CYFRĘ: "+ch);
                 } else {
-                    am_jTextField3.setEditable(false);
+                    am_jTextField1.setEditable(false);
                 }
             }
 
@@ -310,6 +344,7 @@ public class ListaZakopow extends javax.swing.JFrame {
     private javax.swing.JTextField am_jTextField2;
     private javax.swing.JTextField am_jTextField3;
     private javax.swing.JTextField am_jTextField4;
+    private javax.swing.JTextField am_jTextField_data;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     // End of variables declaration//GEN-END:variables

@@ -71,7 +71,7 @@
                                       <Component id="am_jLabel6" min="-2" max="-2" attributes="0"/>
                                       <Component id="am_jLabel7" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -99,17 +99,19 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
                                           <Component id="am_jLabel3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="am_jComboBox1" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="am_jButton1" alignment="1" min="-2" pref="86" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                           <Component id="am_jLabel4" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="am_jTextField_data" min="-2" pref="78" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -118,10 +120,14 @@
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="am_jTextField4" max="32767" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="am_jButton1" min="-2" pref="78" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -135,15 +141,18 @@
                       <Component id="am_jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="am_jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="am_jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="am_jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="am_jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="am_jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="am_jTextField_data" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="am_jLabel5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="am_jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="am_jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -209,6 +218,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Zapisz"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="am_jButton1ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="am_jScrollPane1">
           <AuxValues>
@@ -241,8 +253,13 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="am_jTextField3">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="am_jTextField3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="am_jTextField4">
+        </Component>
+        <Component class="javax.swing.JTextField" name="am_jTextField_data">
         </Component>
       </SubComponents>
     </Container>
