@@ -120,10 +120,7 @@
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="am_jTextField4" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="am_jButton1" min="-2" pref="78" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="am_jButton1" alignment="1" min="-2" pref="78" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>

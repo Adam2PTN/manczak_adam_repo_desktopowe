@@ -20,6 +20,7 @@ public class ListaZakopow extends javax.swing.JFrame {
     public ListaZakopow() {
         initComponents();
         addKeyListenerToam_jTextField_data();
+        addKeyListenerToam_jTextField2();
     }
 
     /**
@@ -325,6 +326,31 @@ public class ListaZakopow extends javax.swing.JFrame {
         });
         
     }
+    private void addKeyListenerToam_jTextField2(){
+        am_jTextField2.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                String temp = am_jTextField2.getText();
+                char ch = e.getKeyChar();
+                
+                System.out.println(temp.indexOf(","));
+                
+                if(temp.contains(",")){
+                    if(ch >= '0' && ch <= '9' || ch == KeyEvent.VK_BACK_SPACE){
+                       am_jTextField2.setEditable(true);
+                } else {
+                        am_jTextField2.setEditable(false);
+                    }
+                } else {
+                if(ch >= '0' && ch <= '9' || ch == '-' || ch == KeyEvent.VK_BACK_SPACE){
+                    am_jTextField2.setEditable(true);
+                } else {
+                    am_jTextField2.setEditable(false);
+                }
+                }
+            }
+            });
+        }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton am_jButton1;
