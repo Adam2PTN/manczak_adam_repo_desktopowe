@@ -59,6 +59,12 @@ public class ListaZakopow extends javax.swing.JFrame {
 
         am_jLabel2.setText("Podaj wartość");
 
+        am_jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                am_jTextField2ActionPerformed(evt);
+            }
+        });
+
         am_jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         am_jLabel3.setText("Typ zakupionego towaru");
@@ -140,9 +146,7 @@ public class ListaZakopow extends javax.swing.JFrame {
                             .addGroup(am_jPanellLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(am_jTextField4))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, am_jPanellLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(am_jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(am_jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(20, 20, 20))
         );
         am_jPanellLayout.setVerticalGroup(
@@ -208,6 +212,10 @@ public class ListaZakopow extends javax.swing.JFrame {
     private void am_jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_am_jButton1ActionPerformed
+
+    private void am_jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_am_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -351,6 +359,17 @@ public class ListaZakopow extends javax.swing.JFrame {
             }
             });
         }
+    
+        private void addTooltipToElements(){
+        am_jTextField1.setToolTipText("<html>"
+        +"<h3>Wprowadz tekst</h3>"
+        +"<p>Nie uzywaj polskich znakow</p>"
+        +"</html>");
+        am_jTextField2.setToolTipText("<html>"
+        +"<h3>Wprowadz tekst</h3>"
+        +"<p>Nie uzywaj polskich znakow</p>"
+        +"</html>");
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton am_jButton1;
