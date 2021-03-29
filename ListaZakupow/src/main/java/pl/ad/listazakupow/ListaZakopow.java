@@ -40,7 +40,7 @@ public class ListaZakopow extends javax.swing.JFrame {
         am_jComboBox1 = new javax.swing.JComboBox<>();
         am_jLabel3 = new javax.swing.JLabel();
         am_jLabel4 = new javax.swing.JLabel();
-        am_jButton1 = new javax.swing.JButton();
+        am_jButton_Zapis = new javax.swing.JButton();
         am_jScrollPane1 = new javax.swing.JScrollPane();
         am_jTextArea1 = new javax.swing.JTextArea();
         am_jLabel5 = new javax.swing.JLabel();
@@ -71,10 +71,10 @@ public class ListaZakopow extends javax.swing.JFrame {
 
         am_jLabel4.setText("Data zakupu");
 
-        am_jButton1.setText("Zapisz");
-        am_jButton1.addActionListener(new java.awt.event.ActionListener() {
+        am_jButton_Zapis.setText("Zapisz");
+        am_jButton_Zapis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                am_jButton1ActionPerformed(evt);
+                am_jButton_ZapisActionPerformed(evt);
             }
         });
 
@@ -146,7 +146,7 @@ public class ListaZakopow extends javax.swing.JFrame {
                             .addGroup(am_jPanellLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(am_jTextField4))
-                            .addComponent(am_jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(am_jButton_Zapis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(20, 20, 20))
         );
         am_jPanellLayout.setVerticalGroup(
@@ -167,7 +167,7 @@ public class ListaZakopow extends javax.swing.JFrame {
                 .addGap(9, 9, 9)
                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(am_jLabel5)
-                    .addComponent(am_jButton1))
+                    .addComponent(am_jButton_Zapis))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(am_jPanellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(am_jPanellLayout.createSequentialGroup()
@@ -209,9 +209,13 @@ public class ListaZakopow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_am_jTextField3ActionPerformed
 
-    private void am_jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_am_jButton1ActionPerformed
+    private void am_jButton_ZapisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton_ZapisActionPerformed
+        SaveToFile stf = new SaveToFile();
+        String text = am_jTextField1.getText().trim()+";"+am_jTextField2.getText()+";"
+                +am_jComboBox1.getSelectedItem().toString()+";"+am_jTextField_data.getText();
+        stf.saveTofile(text);
+        
+    }//GEN-LAST:event_am_jButton_ZapisActionPerformed
 
     private void am_jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -369,10 +373,14 @@ public class ListaZakopow extends javax.swing.JFrame {
         +"<h3>Wprowadz tekst</h3>"
         +"<p>Nie uzywaj polskich znakow</p>"
         +"</html>");
-    }
+
+        private String file_name = "lista_zakupow.csv";
+        private String product_names = "product_names.csv";
+        
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton am_jButton1;
+    private javax.swing.JButton am_jButton_Zapis;
     private javax.swing.JComboBox<String> am_jComboBox1;
     private javax.swing.JLabel am_jLabel1;
     private javax.swing.JLabel am_jLabel2;

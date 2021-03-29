@@ -120,7 +120,7 @@
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="am_jTextField4" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="am_jButton1" alignment="1" min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="am_jButton_Zapis" alignment="1" min="-2" pref="78" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -148,7 +148,7 @@
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="am_jLabel5" min="-2" max="-2" attributes="0"/>
-                      <Component id="am_jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="am_jButton_Zapis" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -214,12 +214,12 @@
             <Property name="text" type="java.lang.String" value="Data zakupu"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="am_jButton1">
+        <Component class="javax.swing.JButton" name="am_jButton_Zapis">
           <Properties>
             <Property name="text" type="java.lang.String" value="Zapisz"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="am_jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="am_jButton_ZapisActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="am_jScrollPane1">
