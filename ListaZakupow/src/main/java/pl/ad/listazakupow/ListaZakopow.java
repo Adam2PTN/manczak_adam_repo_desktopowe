@@ -19,8 +19,12 @@ public class ListaZakopow extends javax.swing.JFrame {
      */
     public ListaZakopow() {
         initComponents();
+        
         addKeyListenerToam_jTextField_data();
+        addKeyListenerToam_jTextField1();
         addKeyListenerToam_jTextField2();
+        addTooltipToElements();
+        fillam_jComboBox1();
     }
 
     /**
@@ -210,7 +214,7 @@ public class ListaZakopow extends javax.swing.JFrame {
     }//GEN-LAST:event_am_jTextField3ActionPerformed
 
     private void am_jButton_ZapisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton_ZapisActionPerformed
-        SaveToFile stf = new SaveToFile();
+        FileUtlls stf = new FileUtlls();
         String text = am_jTextField1.getText().trim()+";"+am_jTextField2.getText()+";"
                 +am_jComboBox1.getSelectedItem().toString()+";"+am_jTextField_data.getText();
         stf.saveTofile(text);
@@ -221,6 +225,8 @@ public class ListaZakopow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_am_jTextField2ActionPerformed
 
+    private void fillam_jComboBox1(){
+}
     /**
      * @param args the command line arguments
      */
