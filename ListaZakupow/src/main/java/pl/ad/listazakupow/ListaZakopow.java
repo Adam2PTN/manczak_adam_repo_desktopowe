@@ -7,6 +7,8 @@ package pl.ad.listazakupow;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
+import java.io.FileWriter;
 
 /**
  *
@@ -69,7 +71,12 @@ public class ListaZakopow extends javax.swing.JFrame {
             }
         });
 
-        am_jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        am_jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Warzywa", "Owoce", "Napoje", "Nabiał", "Słodycze", "Pieczywo" }));
+        am_jComboBox1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                am_jComboBox1ItemStateChanged(evt);
+            }
+        });
 
         am_jLabel3.setText("Typ zakupionego towaru");
 
@@ -224,6 +231,10 @@ public class ListaZakopow extends javax.swing.JFrame {
     private void am_jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_am_jTextField2ActionPerformed
+
+    private void am_jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_am_jComboBox1ItemStateChanged
+        FileUtlls stf = new FileUtlls();
+    }//GEN-LAST:event_am_jComboBox1ItemStateChanged
 
     private void fillam_jComboBox1(){
 }
