@@ -233,7 +233,7 @@ public class ListaZakopow extends javax.swing.JFrame {
     }//GEN-LAST:event_am_jTextField2ActionPerformed
 
     private void am_jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_am_jComboBox1ItemStateChanged
-        FileUtlls stf = new FileUtlls();
+        IleProduktow ile = new IleProduktow();
     }//GEN-LAST:event_am_jComboBox1ItemStateChanged
 
     private void fillam_jComboBox1(){
