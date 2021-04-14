@@ -27,17 +27,148 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        am_jPanel1 = new javax.swing.JPanel();
+        am_jTabbedPane = new javax.swing.JTabbedPane();
+        am_jPanel_rejestracja = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        am_jTextField_name1 = new javax.swing.JTextField();
+        am_jLabel_name1 = new javax.swing.JLabel();
+        am_jLabel_mail1 = new javax.swing.JLabel();
+        am_jTextField_mail1 = new javax.swing.JTextField();
+        am_jLabel_pass1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        am_jLabel_pass_con = new javax.swing.JLabel();
+        am_jTextField_pass_con = new javax.swing.JTextField();
+        am_jButton_register = new javax.swing.JButton();
+        am_jPanel_login = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("Rejestracja");
+
+        am_jLabel_name1.setText("Username");
+
+        am_jLabel_mail1.setText("Email");
+
+        am_jLabel_pass1.setText("Password");
+
+        am_jLabel_pass_con.setText("Confirm Password");
+
+        am_jButton_register.setText("Rejestracja");
+
+        javax.swing.GroupLayout am_jPanel_rejestracjaLayout = new javax.swing.GroupLayout(am_jPanel_rejestracja);
+        am_jPanel_rejestracja.setLayout(am_jPanel_rejestracjaLayout);
+        am_jPanel_rejestracjaLayout.setHorizontalGroup(
+            am_jPanel_rejestracjaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(am_jPanel_rejestracjaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(am_jPanel_rejestracjaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(am_jPanel_rejestracjaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel1)
+                        .addComponent(am_jLabel_name1)
+                        .addComponent(am_jLabel_mail1)
+                        .addComponent(am_jTextField_mail1)
+                        .addComponent(am_jLabel_pass1)
+                        .addComponent(jTextField1)
+                        .addComponent(am_jLabel_pass_con)
+                        .addComponent(am_jTextField_pass_con, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
+                        .addComponent(am_jTextField_name1))
+                    .addComponent(am_jButton_register))
+                .addContainerGap(277, Short.MAX_VALUE))
+        );
+        am_jPanel_rejestracjaLayout.setVerticalGroup(
+            am_jPanel_rejestracjaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(am_jPanel_rejestracjaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(13, 13, 13)
+                .addComponent(am_jLabel_name1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(am_jTextField_name1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(am_jLabel_mail1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(am_jTextField_mail1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(am_jLabel_pass1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(am_jLabel_pass_con)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(am_jTextField_pass_con, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(am_jButton_register)
+                .addContainerGap())
+        );
+
+        am_jTabbedPane.addTab("Rejestracja", am_jPanel_rejestracja);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setText("Logowanie");
+
+        jLabel3.setText("Email");
+
+        jLabel4.setText("Password");
+
+        javax.swing.GroupLayout am_jPanel_loginLayout = new javax.swing.GroupLayout(am_jPanel_login);
+        am_jPanel_login.setLayout(am_jPanel_loginLayout);
+        am_jPanel_loginLayout.setHorizontalGroup(
+            am_jPanel_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(am_jPanel_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(am_jPanel_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextField2)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
+                .addContainerGap(277, Short.MAX_VALUE))
+        );
+        am_jPanel_loginLayout.setVerticalGroup(
+            am_jPanel_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(am_jPanel_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(164, Short.MAX_VALUE))
+        );
+
+        am_jTabbedPane.addTab("Logowanie", am_jPanel_login);
+
+        javax.swing.GroupLayout am_jPanel1Layout = new javax.swing.GroupLayout(am_jPanel1);
+        am_jPanel1.setLayout(am_jPanel1Layout);
+        am_jPanel1Layout.setHorizontalGroup(
+            am_jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(am_jTabbedPane)
+        );
+        am_jPanel1Layout.setVerticalGroup(
+            am_jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(am_jTabbedPane, javax.swing.GroupLayout.Alignment.TRAILING)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(am_jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(am_jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -79,5 +210,24 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton am_jButton_register;
+    private javax.swing.JLabel am_jLabel_mail1;
+    private javax.swing.JLabel am_jLabel_name1;
+    private javax.swing.JLabel am_jLabel_pass1;
+    private javax.swing.JLabel am_jLabel_pass_con;
+    private javax.swing.JPanel am_jPanel1;
+    private javax.swing.JPanel am_jPanel_login;
+    private javax.swing.JPanel am_jPanel_rejestracja;
+    private javax.swing.JTabbedPane am_jTabbedPane;
+    private javax.swing.JTextField am_jTextField_mail1;
+    private javax.swing.JTextField am_jTextField_name1;
+    private javax.swing.JTextField am_jTextField_pass_con;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
