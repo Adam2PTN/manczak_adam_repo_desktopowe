@@ -5,6 +5,7 @@
  */
 package pl.ad.rejestracjalogowanie;
 
+import java.awt.event.KeyEvent;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -39,7 +40,7 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
         am_jLabel_mail1 = new javax.swing.JLabel();
         am_jTextField_mail1 = new javax.swing.JTextField();
         am_jLabel_pass1 = new javax.swing.JLabel();
-        jTextField_pass1 = new javax.swing.JTextField();
+        am_jTextField_pass1 = new javax.swing.JTextField();
         am_jLabel_pass_con = new javax.swing.JLabel();
         am_jTextField_pass_con = new javax.swing.JTextField();
         am_jButton_rejestracja = new javax.swing.JButton();
@@ -84,7 +85,7 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
                         .addComponent(am_jLabel_mail1)
                         .addComponent(am_jTextField_mail1)
                         .addComponent(am_jLabel_pass1)
-                        .addComponent(jTextField_pass1)
+                        .addComponent(am_jTextField_pass1)
                         .addComponent(am_jLabel_pass_con)
                         .addComponent(am_jTextField_pass_con, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
                         .addComponent(am_jTextField_name1))
@@ -107,7 +108,7 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(am_jLabel_pass1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField_pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(am_jTextField_pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(am_jLabel_pass_con)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -192,7 +193,7 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
     private void am_jButton_rejestracjaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am_jButton_rejestracjaActionPerformed
         try{
             FileWriter fw = new FileWriter("sekretnehasla.csv",true);
-            String str = am_jTextField_name1.getText()+":"+am_jTextField_mail1.getText()+":"+jTextField_pass1.getText();
+            String str = am_jTextField_name1.getText()+":"+am_jTextField_mail1.getText()+":"+am_jTextField_pass1.getText();
             fw.write(str);
             fw.close();
         }catch(IOException ex){
@@ -252,8 +253,8 @@ public class RejestracjaLogowanie extends javax.swing.JFrame {
     private javax.swing.JTextField am_jTextField_mail1;
     private javax.swing.JTextField am_jTextField_mail2;
     private javax.swing.JTextField am_jTextField_name1;
+    private javax.swing.JTextField am_jTextField_pass1;
     private javax.swing.JTextField am_jTextField_pass2;
     private javax.swing.JTextField am_jTextField_pass_con;
-    private javax.swing.JTextField jTextField_pass1;
     // End of variables declaration//GEN-END:variables
 }

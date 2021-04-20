@@ -73,7 +73,7 @@
                                   <Component id="am_jLabel_mail1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="am_jTextField_mail1" alignment="0" max="32767" attributes="0"/>
                                   <Component id="am_jLabel_pass1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField_pass1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="am_jTextField_pass1" alignment="0" max="32767" attributes="0"/>
                                   <Component id="am_jLabel_pass_con" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="am_jTextField_pass_con" alignment="0" pref="156" max="32767" attributes="0"/>
                                   <Component id="am_jTextField_name1" alignment="0" max="32767" attributes="0"/>
@@ -100,7 +100,7 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="am_jLabel_pass1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField_pass1" min="-2" max="-2" attributes="0"/>
+                          <Component id="am_jTextField_pass1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="am_jLabel_pass_con" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -140,7 +140,7 @@
                     <Property name="text" type="java.lang.String" value="Password"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField_pass1">
+                <Component class="javax.swing.JTextField" name="am_jTextField_pass1">
                 </Component>
                 <Component class="javax.swing.JLabel" name="am_jLabel_pass_con">
                   <Properties>
