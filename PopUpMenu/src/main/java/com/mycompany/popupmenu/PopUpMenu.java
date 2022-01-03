@@ -38,6 +38,11 @@ public class PopUpMenu extends javax.swing.JFrame {
         jList1 = new javax.swing.JList<>();
 
         jMenuItem_edit.setText("Edit");
+        jMenuItem_edit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_editActionPerformed(evt);
+            }
+        });
         jPopupMenu.add(jMenuItem_edit);
 
         jMenuItem_delete.setText("Delete");
@@ -45,9 +50,16 @@ public class PopUpMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setComponentPopupMenu(jPopupMenu);
+
         jButton1.setText("Usuń zaznaczone");
 
         jButton2.setText("Dodaj");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jScrollPane2.setComponentPopupMenu(jPopupMenu);
 
@@ -97,6 +109,14 @@ public class PopUpMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem_editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_editActionPerformed
+        new JFrame().setVisible(true);
+    }//GEN-LAST:event_jMenuItem_editActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new JFrame().setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
