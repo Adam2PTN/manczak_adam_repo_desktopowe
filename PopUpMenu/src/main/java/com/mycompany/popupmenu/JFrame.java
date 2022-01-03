@@ -41,6 +41,11 @@ public class JFrame extends javax.swing.JFrame {
         jLabel2.setText("Nazwisko");
 
         jButton_add.setText("Add");
+        jButton_add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_addActionPerformed(evt);
+            }
+        });
 
         jButton_cancel.setText("Cancel");
         jButton_cancel.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +112,10 @@ public class JFrame extends javax.swing.JFrame {
     private void jButton_cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cancelActionPerformed
         setVisible(false);
     }//GEN-LAST:event_jButton_cancelActionPerformed
+
+    private void jButton_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_addActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton_addActionPerformed
 
     /**
      * @param args the command line arguments
