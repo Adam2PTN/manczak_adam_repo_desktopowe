@@ -27,188 +27,242 @@ public class GridLayout extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        jTextField_wynik = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
+        jButton_mc = new javax.swing.JButton();
+        jButton_mplus = new javax.swing.JButton();
+        jButton_mminus = new javax.swing.JButton();
+        jButton_cofnij = new javax.swing.JButton();
+        jButton_c = new javax.swing.JButton();
+        jButton_dzielenie = new javax.swing.JButton();
+        jButton_mnozenie = new javax.swing.JButton();
+        jButton_potega = new javax.swing.JButton();
+        jButton_7 = new javax.swing.JButton();
+        jButton_8 = new javax.swing.JButton();
+        jButton_9 = new javax.swing.JButton();
+        jButton_pierwiastek = new javax.swing.JButton();
+        jButton_4 = new javax.swing.JButton();
+        jButton_5 = new javax.swing.JButton();
+        jButton_6 = new javax.swing.JButton();
+        jButton_minus = new javax.swing.JButton();
+        jButton_1 = new javax.swing.JButton();
+        jButton_2 = new javax.swing.JButton();
+        jButton_3 = new javax.swing.JButton();
+        jButton_plus = new javax.swing.JButton();
+        jButton_procent = new javax.swing.JButton();
+        jButton_0 = new javax.swing.JButton();
+        jButton_kropka = new javax.swing.JButton();
+        jButton_wynik = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(new java.awt.GridLayout(1, 1));
 
-        jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.setText("0");
-        jPanel1.add(jTextField1);
+        jTextField_wynik.setEditable(false);
+        jTextField_wynik.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField_wynik.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        jTextField_wynik.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_wynik.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jPanel1.add(jTextField_wynik);
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setLayout(new java.awt.GridLayout(6, 3, 4, 4));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("mc");
-        jPanel2.add(jButton1);
+        jButton_mc.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_mc.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_mc.setText("mc");
+        jPanel2.add(jButton_mc);
 
-        jButton2.setBackground(new java.awt.Color(51, 51, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("m+");
-        jPanel2.add(jButton2);
+        jButton_mplus.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_mplus.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_mplus.setText("m+");
+        jPanel2.add(jButton_mplus);
 
-        jButton9.setBackground(new java.awt.Color(51, 51, 51));
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("m-");
-        jPanel2.add(jButton9);
+        jButton_mminus.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_mminus.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_mminus.setText("m-");
+        jPanel2.add(jButton_mminus);
 
-        jButton5.setBackground(new java.awt.Color(51, 51, 51));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("mr");
-        jPanel2.add(jButton5);
+        jButton_cofnij.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_cofnij.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_cofnij.setText("<-");
+        jPanel2.add(jButton_cofnij);
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("C");
-        jPanel2.add(jButton3);
+        jButton_c.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_c.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_c.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_c.setText("C");
+        jButton_c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_cActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_c);
 
-        jButton21.setBackground(new java.awt.Color(0, 0, 0));
-        jButton21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(255, 255, 255));
-        jButton21.setText("/");
-        jPanel2.add(jButton21);
+        jButton_dzielenie.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_dzielenie.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_dzielenie.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_dzielenie.setText("/");
+        jPanel2.add(jButton_dzielenie);
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("X");
-        jPanel2.add(jButton4);
+        jButton_mnozenie.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_mnozenie.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_mnozenie.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_mnozenie.setText("X");
+        jPanel2.add(jButton_mnozenie);
 
-        jButton13.setBackground(new java.awt.Color(51, 51, 51));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("<-");
-        jPanel2.add(jButton13);
+        jButton_potega.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_potega.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_potega.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_potega.setText("x²");
+        jPanel2.add(jButton_potega);
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 0));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("7");
-        jPanel2.add(jButton6);
+        jButton_7.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_7.setText("7");
+        jButton_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_7ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_7);
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("8");
-        jPanel2.add(jButton7);
+        jButton_8.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_8.setText("8");
+        jButton_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_8ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_8);
 
-        jButton8.setBackground(new java.awt.Color(0, 0, 0));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("9");
-        jPanel2.add(jButton8);
+        jButton_9.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_9.setText("9");
+        jButton_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_9);
 
-        jButton10.setBackground(new java.awt.Color(51, 51, 51));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("√");
-        jPanel2.add(jButton10);
+        jButton_pierwiastek.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_pierwiastek.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_pierwiastek.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_pierwiastek.setText("√");
+        jPanel2.add(jButton_pierwiastek);
 
-        jButton11.setBackground(new java.awt.Color(0, 0, 0));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("4");
-        jPanel2.add(jButton11);
+        jButton_4.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_4.setText("4");
+        jButton_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_4);
 
-        jButton12.setBackground(new java.awt.Color(0, 0, 0));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("5");
-        jPanel2.add(jButton12);
+        jButton_5.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_5.setText("5");
+        jButton_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_5);
 
-        jButton14.setBackground(new java.awt.Color(0, 0, 0));
-        jButton14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(255, 255, 255));
-        jButton14.setText("6");
-        jPanel2.add(jButton14);
+        jButton_6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_6.setText("6");
+        jButton_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_6);
 
-        jButton15.setBackground(new java.awt.Color(51, 51, 51));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setText("-");
-        jPanel2.add(jButton15);
+        jButton_minus.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_minus.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_minus.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_minus.setText("-");
+        jPanel2.add(jButton_minus);
 
-        jButton23.setBackground(new java.awt.Color(0, 0, 0));
-        jButton23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton23.setForeground(new java.awt.Color(255, 255, 255));
-        jButton23.setText("1");
-        jPanel2.add(jButton23);
+        jButton_1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_1.setText("1");
+        jButton_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_1);
 
-        jButton22.setBackground(new java.awt.Color(0, 0, 0));
-        jButton22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(255, 255, 255));
-        jButton22.setText("2");
-        jPanel2.add(jButton22);
+        jButton_2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_2.setText("2");
+        jButton_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_2);
 
-        jButton17.setBackground(new java.awt.Color(0, 0, 0));
-        jButton17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(255, 255, 255));
-        jButton17.setText("3");
-        jPanel2.add(jButton17);
+        jButton_3.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_3.setText("3");
+        jButton_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_3);
 
-        jButton16.setBackground(new java.awt.Color(51, 51, 51));
-        jButton16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setText("+");
-        jPanel2.add(jButton16);
+        jButton_plus.setBackground(new java.awt.Color(51, 51, 51));
+        jButton_plus.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_plus.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_plus.setText("+");
+        jPanel2.add(jButton_plus);
 
-        jButton18.setBackground(new java.awt.Color(0, 0, 0));
-        jButton18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(255, 255, 255));
-        jButton18.setText("%");
-        jPanel2.add(jButton18);
+        jButton_procent.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_procent.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_procent.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_procent.setText("%");
+        jPanel2.add(jButton_procent);
 
-        jButton19.setBackground(new java.awt.Color(0, 0, 0));
-        jButton19.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(255, 255, 255));
-        jButton19.setText("0");
-        jPanel2.add(jButton19);
+        jButton_0.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_0.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_0.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_0.setText("0");
+        jButton_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_0ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_0);
 
-        jButton20.setBackground(new java.awt.Color(0, 0, 0));
-        jButton20.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(255, 255, 255));
-        jButton20.setText(".");
-        jPanel2.add(jButton20);
+        jButton_kropka.setBackground(new java.awt.Color(0, 0, 0));
+        jButton_kropka.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_kropka.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_kropka.setText(".");
+        jPanel2.add(jButton_kropka);
 
-        jButton24.setBackground(new java.awt.Color(102, 102, 102));
-        jButton24.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton24.setForeground(new java.awt.Color(255, 255, 255));
-        jButton24.setText("=");
-        jPanel2.add(jButton24);
+        jButton_wynik.setBackground(new java.awt.Color(102, 102, 102));
+        jButton_wynik.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_wynik.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_wynik.setText("=");
+        jPanel2.add(jButton_wynik);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -227,6 +281,70 @@ public class GridLayout extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_7ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_7.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_7ActionPerformed
+
+    private void jButton_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_8ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_8.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_8ActionPerformed
+
+    private void jButton_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_9ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_9.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_9ActionPerformed
+
+    private void jButton_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_4ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_4.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_4ActionPerformed
+
+    private void jButton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_5ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_5.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_5ActionPerformed
+
+    private void jButton_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_6ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_6.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_6ActionPerformed
+
+    private void jButton_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_1ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_1.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_1ActionPerformed
+
+    private void jButton_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_2ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_2.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_2ActionPerformed
+
+    private void jButton_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_3ActionPerformed
+       String number;
+       number = jTextField_wynik.getText() + jButton_3.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_3ActionPerformed
+
+    private void jButton_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_0ActionPerformed
+        String number;
+       number = jTextField_wynik.getText() + jButton_0.getText();
+       jTextField_wynik.setText(number);
+    }//GEN-LAST:event_jButton_0ActionPerformed
+
+    private void jButton_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cActionPerformed
+       jTextField_wynik.setText("");
+    }//GEN-LAST:event_jButton_cActionPerformed
 
     /**
      * @param args the command line arguments
@@ -264,32 +382,32 @@ public class GridLayout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButton_0;
+    private javax.swing.JButton jButton_1;
+    private javax.swing.JButton jButton_2;
+    private javax.swing.JButton jButton_3;
+    private javax.swing.JButton jButton_4;
+    private javax.swing.JButton jButton_5;
+    private javax.swing.JButton jButton_6;
+    private javax.swing.JButton jButton_7;
+    private javax.swing.JButton jButton_8;
+    private javax.swing.JButton jButton_9;
+    private javax.swing.JButton jButton_c;
+    private javax.swing.JButton jButton_cofnij;
+    private javax.swing.JButton jButton_dzielenie;
+    private javax.swing.JButton jButton_kropka;
+    private javax.swing.JButton jButton_mc;
+    private javax.swing.JButton jButton_minus;
+    private javax.swing.JButton jButton_mminus;
+    private javax.swing.JButton jButton_mnozenie;
+    private javax.swing.JButton jButton_mplus;
+    private javax.swing.JButton jButton_pierwiastek;
+    private javax.swing.JButton jButton_plus;
+    private javax.swing.JButton jButton_potega;
+    private javax.swing.JButton jButton_procent;
+    private javax.swing.JButton jButton_wynik;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField_wynik;
     // End of variables declaration//GEN-END:variables
 }
