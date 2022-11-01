@@ -1,0 +1,88 @@
+{
+ "routes":[
+   {
+     "id": 1,
+     "name":"Kacza Górka - Nowa Sól",
+     "description":"Wyprawa na Kaczą Górkę prowadzącą przez park w Nowej Soli.",
+     "image_url":"https://d-art.ppstatic.pl/kadry/k/r/1/88/44/5ee090fc8d169_o_small.jpg",
+     "length": 4401,
+     "best_time": 40,
+     "best_time_data": "16.09.2019",
+     "type": "Wycieczka pieszo"
+   },
+  {
+     "id": 2,
+     "name":"Centrum Handlowe - Zielona Góra",
+     "description":"Wyprawa do Zielonej Góry do Centrum Handlowego 'Focus'.",
+     "image_url":"https://bi.im-g.pl/im/d9/35/bb/z12269017AMP,Focus-Mall-Zielona-Gora.jpg",
+     "length": 25000,
+     "best_time": 95,
+     "best_time_data": "02.10.2016",
+     "type": "Wycieczka rowerowa "
+   },
+  {
+     "id": 3,
+     "name":"Ścieżka rowerowa - Konotop",
+     "description":"Wyprawa do Konotopu przez sciężke rowerową.",
+     "image_url":"https://powiat-nowosolski.pl/wp-content/uploads/2019/08/dsc_0281.jpg",
+     "length": 60000,
+     "best_time": 120,
+     "best_time_data": "14.04.2017",
+     "type": "Wycieczka rowerowa"
+   },
+  {
+     "id": 4,
+     "name":"Kregielnia - Nowa Sól",
+     "description":"Wyprawa do Nowej soli w Złotym Łanie na kręgle.",
+     "image_url":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/222904467.jpg?k=b0eb276c8e69056d86629d19f235e44a4c1b684b38fcb0e0be2f424cfa400e43&o=&hp=1",
+     "length": 2100,
+     "best_time": 10,
+     "best_time_data": "12.01.2021",
+     "type": "Wycieczka pieszo"
+   },
+  {
+     "id": 5,
+     "name":"Galeria Grafitt - Zielona Góra",
+     "description":"Wyprawa do Zielonej Góry do Centrum Handlowego 'Galeria Grafitt'.",
+     "image_url":"https://polska-org.pl/foto/283/Galeria_Grafitt_ul_Bohaterow_Westerplatte_Zielona_Gora_283660.jpg",
+     "length": 29000,
+     "best_time": 98,
+     "best_time_data": "28.08.2020",
+     "type": "Wycieczka rowerowa"
+   },
+  {
+     "id": 6,
+     "name":"Pizzeria Maurizio - Nowa Sól",
+     "description":"Wyprawa do Pizzeri 'Maurizio' w Nowej Soli.",
+     "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqNfKUs7qmrP06iagvIm4iOw_WLc87d8GAQ96YrCDD-aW8VYixFscmD83YYvYJwvPbxs&usqp=CAU",
+     "length": 4000,
+     "best_time": 49,
+     "best_time_data": "16.09.2019",
+     "type": "Wycieczka pieszo"
+   }
+  ],
+  
+  "users":[
+    {
+      "id": 1,
+      "nick": "patrykbenjamin",
+      "last_time": [
+        {
+          "route_id": 1,
+          "time": 58,
+          "date": "20.10.2021"
+         },
+        {
+          "route_id": 2,
+          "time": 101,
+          "date": "11.03.2022"
+         },
+        {
+          "route_id": 6,
+          "time": 61,
+          "date": "04.12.2022"
+        }
+      ]
+    }
+  ]
+}
